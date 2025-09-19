@@ -1,0 +1,40 @@
+body {
+    background-color: black;
+}
+
+body h1, p{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+}
+
+body h1 {
+    font-size: 20px;
+    text-align: center;
+}
+
+.pp {
+    
+    display: block;
+    padding: 5px;
+    border: 2px solid white;
+}
+
+.bujur {
+    display: block;
+    padding: 5px;
+    border: 2px solid white;
+}
+
+.Segitiga {
+    display: block;
+    padding: 5px;
+    border: 2px solid white;
+}
+
+
+
+button {
+    border: 2px solid white;
+    background-color: black;
+    color: white;
+}
