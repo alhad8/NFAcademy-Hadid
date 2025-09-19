@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Hitung </title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <h1> Hitung Luas Persegi Panjang, Bujur Sangkar, dan Segitiga </h1>
+    <div class="container-fluid">
+	<div class="row">
+		<div class="pp">
+            <p> Panjang <input type="number" id="panjang"></p>
+            <p> Lebar <input type="number" id="lebar"></p>
+            <button type="button" onclick="hitLuas()"> Hitung </button>
+            <p id="hasilLPP"><br></p>
+		</div>
+		<div class="bujur">
+            <p> Sisi <input type="number" id="sisi"> </p>
+            <button type="button" onclick="hitBS()"> Hitung </button>
+            <p id="hasilBujur"><br></p>
+		</div>
+		<div class="Segitiga">
+            <p> Alas <input type="number" id="alas"></p>
+            <P> tinggi <input type="number" id="tinggi"></P>
+            <button type="button" onclick="hitSegitiga()">Hitung</button>
+            <p id="hasilSegitiga"><br></p>
+		</div>
+      <script>
+      function hitLuas() {
+      let panjang = document.getElementById("panjang").value
+      let lebar = document.getElementById("lebar").value
+        if (panjang && lebar) {
+            let hit1 = panjang * lebar
+            document.getElementById("hasilLPP").innerHTML = hit1
+            }
+        }
+
+      function hitBS() {
+      let sisi = document.getElementById("sisi").value
+        if (sisi) {
+            let hit2 = sisi * sisi
+            document.getElementById("hasilBujur").innerHTML = hit2
+            }
+        }
+
+      function hitSegitiga() {
+      let alas = document.getElementById("alas").value
+      let tinggi = document.getElementById("tinggi").value
+        if (alas && tinggi) {
+            let hit3 = 0.5 * alas * tinggi
+            document.getElementById("hasilSegitiga").innerHTML = hit3
+            }
+        }
+        </script>
+	</div>
+</div>
+</body>
+</html> 
