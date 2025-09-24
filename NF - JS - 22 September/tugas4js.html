@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Sistem Manajemen Transportasi </title>
+</head>
+<body>
+    <div class="container">
+        <div>
+            <form id="sewa">
+                <h1> Masukkan Data Pelanggan </h1>
+                <input type="text" id="Nama" placeholder="Nama Penyewa"><br>
+                <input type="number" id="notelp" placeholder="Nomor Telp" min="0"><br>
+                <input type="text" id="Kendaraan" placeholder="Tipe Kendaraan"><br>
+                
+                <button onclick="penyewaBaru()"> Submit </button>
+            </form>
+        </div>
+    </div>
+
+    <div class="container">
+        <div>
+            <h2> Tampilkan Daftar Pelanggan </h2>
+            <button onclick="tampilkanPelanggan()"> Tampilkan Daftar Pelanggan </button>
+            <div id="hasilData"></div>
+        </div>
+    </div>
+</body>
+
+<script src="tugas4js.js"></script>
+
+</html>
